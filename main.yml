@@ -19,6 +19,7 @@
       - iterm2
       - licecap
       - snip
+      - virtualbox
       - visual-studio-code
     brew_packages:
       - autoconf
@@ -43,6 +44,7 @@
       - moreutils
       - nmap
       - openssl
+      - reattach-to-user-namespace
       - ssh-copy-id
       - tig
       - tree
