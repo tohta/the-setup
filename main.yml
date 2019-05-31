@@ -16,10 +16,10 @@
       - google-chrome
       - google-hangouts
       - google-japanese-ime
+      - haptickey
       - iterm2
       - licecap
       - snip
-      - virtualbox
       - visual-studio-code
     brew_packages:
       - autoconf
@@ -46,6 +46,8 @@
       - openssl
       - reattach-to-user-namespace
       - ssh-copy-id
+      - terraform
+      - terraform-inventory
       - tig
       - tree
       - wget
