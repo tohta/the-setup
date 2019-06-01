@@ -19,6 +19,7 @@
       - haptickey
       - iterm2
       - licecap
+      - showyedge
       - snip
       - visual-studio-code
     brew_packages:
@@ -38,6 +39,7 @@
       - gnu-sed
       - gnu-tar
       - gnu-time
+      - go
       - grep
       - gzip
       - jq
