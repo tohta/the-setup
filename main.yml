@@ -56,10 +56,62 @@
       - wget
       - zsh
       - zsh-syntax-highlighting
+    mac_apps:
+      - {id: 430255202,  name: "Mactracker (7.7.7)"}
+      - {id: 1333542190, name: "1Password 7 (7.3)"}
+      - {id: 715768417,  name: "Microsoft Remote Desktop (8.0.30030)"}
+      - {id: 421131143,  name: "MPlayerX (1.0.14)"}
+      - {id: 682658836,  name: "GarageBand (10.3.2)"}
+      - {id: 422304217,  name: "Day One Classic (1.10.6)"}
+      - {id: 425264550,  name: "Disk Speed Test (3.2)"}
+      - {id: 407963104,  name: "Pixelmator (3.8.4)"}
+      - {id: 497799835,  name: "Xcode (10.2.1)"}
+      - {id: 585829637,  name: "Todoist (7.1.3)"}
+      - {id: 434433123,  name: "Apple Configurator (1.7.2)"}
+      - {id: 668841348,  name: "Authy Bluetooth (1.3)"}
+      - {id: 1118136179, name: "AutoMute (1.4)"}
+      - {id: 1033074719, name: "Bilingual News (1.15)"}
+      - {id: 418357707,  name: "CocoaPacketAnalyzer (1.51)"}
+      - {id: 1037126344, name: "Apple Configurator 2 (2.9)"}
+      - {id: 455068834,  name: "Adobe Revel (2.0.1)"}
+      - {id: 1176895641, name: "Spark (2.3.5)"}
+      - {id: 441258766,  name: "Magnet (2.4.3)"}
+      - {id: 425424353,  name: "The Unarchiver (4.1.0)"}
+      - {id: 1024069033, name: "Veertu (1.1.5)"}
+      - {id: 948415170 , name: "Pushbullet (4)"}
+      - {id: 403574981,  name: "Call of Duty 4 - Modern Warfare (1.7.2)"}
+      - {id: 568494494,  name: "Pocket (1.8.2)"}
+      - {id: 410628904,  name: "Wunderlist (3.4.11)"}
+      - {id: 581915465,  name: "Colors for Hue (1.2.7)"}
+      - {id: 494803304,  name: "WiFi Explorer (2.5.4)"}
+      - {id: 408981381,  name: "iPhoto (9.6.1)"}
+      - {id: 1295203466, name: "Microsoft Remote Desktop (10.2.13)"}
+      - {id: 412448059,  name: "ForkLift (2.6.6)"}
+      - {id: 427515976,  name: "3Hub (1.0.9)"}
+      - {id: 848311469,  name: "Write (1.1.8)"}
+      - {id: 409201541,  name: "Pages (8.0)"}
+      - {id: 485812721,  name: "TweetDeck (3.16.1)"}
+      - {id: 409789998,  name: "Twitter (4.3.2)"}
+      - {id: 803453959,  name: "Slack (3.4.2)"}
+      - {id: 747648890,  name: "Telegram (5.2.2)"}
+      - {id: 920404675,  name: "Monodraw (1.4)"}
+      - {id: 1024640650, name: "CotEditor (3.7.5)"}
+      - {id: 1289197285, name: "MindNode (6.0.2)"}
+      - {id: 408981434,  name: "iMovie (10.1.11)"}
+      - {id: 1035516352, name: "ScanSnap Cloud (1.2.10)"}
+      - {id: 409203825,  name: "Numbers (6.0)"}
+      - {id: 539883307,  name: "LINE (5.16.2)"}
+      - {id: 425955336,  name: "Skitch (2.8.2)"}
+      - {id: 409183694,  name: "Keynote (9.0.1)"}
+      - {id: 409907375,  name: "Remote Desktop (3.9)"}
+      - {id: 439654198,  name: "SimpleMind Lite (1.23.1)"}
+
   # pre_tasks:
     ## https://brew.sh/
     # - name: Install Homebrew
     #   command: '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+    # - name: Install mas
+    #   command: 'brew install mas'
 
   tasks:
     # https://docs.ansible.com/ansible/2.7/modules/homebrew_tap_module.html
@@ -68,6 +120,8 @@
         name: "{{ item }}"
         state: "present"
       with_items: "{{ brew_taps }}"
+      tags:
+        - brew
 
     # https://docs.ansible.com/ansible/2.7/modules/homebrew_cask_module.html
     - name: Install Homebrew Cask Packages
@@ -77,13 +131,28 @@
         install_options: "appdir=/Applications"
         accept_external_apps: yes
       with_items: "{{ brew_cask_apps }}"
+      tags:
+        - brew
+        - brew_cask
 
     # https://docs.ansible.com/ansible/2.7/modules/homebrew_module.html
     - name: Update Homebrew
       homebrew:
         update_homebrew: yes
+      tags:
+        - brew
 
     - name: Install Homebrew Packages
       homebrew:
         name: "{{ brew_packages }}"
         state: "present"
+      tags:
+        - brew
+
+    - name: Install Mac App Store
+      shell: mas install '{{ item.id }}'
+      with_items: '{{ mac_apps }}'
+      register: res
+      changed_when: res.rc != 0
+      tags:
+        - mas
