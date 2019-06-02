@@ -43,6 +43,7 @@
       - grep
       - gzip
       - jq
+      - lua
       - moreutils
       - nmap
       - openssl
