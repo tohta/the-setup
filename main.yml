@@ -26,6 +26,7 @@
       - autoconf
       - awscli
       - binutils
+      - ccat
       - coreutils
       - diffutils
       - docker-compose
