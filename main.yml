@@ -20,6 +20,7 @@
       - haptickey
       - iterm2
       - licecap
+      - ngrok
       - showyedge
       - snip
       - visual-studio-code
@@ -47,6 +48,7 @@
       - jq
       - lua
       - moreutils
+      - ngrep
       - nmap
       - openssl
       - reattach-to-user-namespace
