@@ -47,6 +47,7 @@
       - grep
       - gzip
       - jq
+      - kubectx
       - lua
       - moreutils
       - ngrep
