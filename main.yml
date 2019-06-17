@@ -56,6 +56,7 @@
       - openssl
       - reattach-to-user-namespace
       - ssh-copy-id
+      - stern
       - terraform
       - terraform-inventory
       - tig
