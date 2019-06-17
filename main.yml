@@ -28,6 +28,7 @@
     brew_packages:
       - autoconf
       - awscli
+      - azure-cli
       - binutils
       - ccat
       - coreutils
