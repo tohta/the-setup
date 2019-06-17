@@ -31,6 +31,7 @@
       - azure-cli
       - binutils
       - ccat
+      - circleci
       - coreutils
       - diffutils
       - docker-compose
