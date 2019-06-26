@@ -12,6 +12,7 @@
     brew_cask_apps:
       - alfred
       - docker
+      - fetch
       - firefox
       - google-chrome
       - google-hangouts
