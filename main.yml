@@ -10,6 +10,7 @@
       - homebrew/core
       - caskroom/cask
     brew_cask_apps:
+      - adoptopenjdk
       - alfred
       - dbeaver-community
       - docker
@@ -36,6 +37,7 @@
       - circleci
       - coreutils
       - diffutils
+      - digdag
       - direnv
       - docker-compose
       - docker-machine
