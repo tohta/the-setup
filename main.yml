@@ -63,6 +63,7 @@
       - reattach-to-user-namespace
       - ssh-copy-id
       - stern
+      - terminal-notifier
       - terraform
       - terraform-inventory
       - tig
