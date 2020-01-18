@@ -62,6 +62,7 @@
       - nmap
       - openssl
       - reattach-to-user-namespace
+      - shellcheck
       - ssh-copy-id
       - stern
       - terminal-notifier
