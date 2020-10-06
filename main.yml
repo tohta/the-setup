@@ -75,56 +75,67 @@
       - zsh
       - zsh-syntax-highlighting
     mac_apps:
-      - {id: 430255202,  name: "Mactracker (7.7.7)"}
-      - {id: 1333542190, name: "1Password 7 (7.3)"}
-      - {id: 715768417,  name: "Microsoft Remote Desktop (8.0.30030)"}
-      - {id: 421131143,  name: "MPlayerX (1.0.14)"}
-      - {id: 682658836,  name: "GarageBand (10.3.2)"}
-      - {id: 422304217,  name: "Day One Classic (1.10.6)"}
-      - {id: 425264550,  name: "Disk Speed Test (3.2)"}
-      - {id: 407963104,  name: "Pixelmator (3.8.4)"}
-      - {id: 497799835,  name: "Xcode (10.2.1)"}
-      - {id: 585829637,  name: "Todoist (7.1.3)"}
-      - {id: 434433123,  name: "Apple Configurator (1.7.2)"}
-      - {id: 668841348,  name: "Authy Bluetooth (1.3)"}
-      - {id: 1118136179, name: "AutoMute (1.4)"}
-      - {id: 1033074719, name: "Bilingual News (1.15)"}
-      - {id: 418357707,  name: "CocoaPacketAnalyzer (1.51)"}
-      - {id: 1037126344, name: "Apple Configurator 2 (2.9)"}
-      - {id: 455068834,  name: "Adobe Revel (2.0.1)"}
-      - {id: 1176895641, name: "Spark (2.3.5)"}
-      - {id: 441258766,  name: "Magnet (2.4.3)"}
-      - {id: 425424353,  name: "The Unarchiver (4.1.0)"}
-      - {id: 1024069033, name: "Veertu (1.1.5)"}
-      - {id: 948415170 , name: "Pushbullet (4)"}
-      - {id: 403574981,  name: "Call of Duty 4 - Modern Warfare (1.7.2)"}
-      - {id: 568494494,  name: "Pocket (1.8.2)"}
-      - {id: 410628904,  name: "Wunderlist (3.4.11)"}
-      - {id: 581915465,  name: "Colors for Hue (1.2.7)"}
-      - {id: 494803304,  name: "WiFi Explorer (2.5.4)"}
-      - {id: 408981381,  name: "iPhoto (9.6.1)"}
-      - {id: 1295203466, name: "Microsoft Remote Desktop (10.2.13)"}
-      - {id: 412448059,  name: "ForkLift (2.6.6)"}
-      - {id: 427515976,  name: "3Hub (1.0.9)"}
-      - {id: 848311469,  name: "Write (1.1.8)"}
-      - {id: 409201541,  name: "Pages (8.0)"}
-      - {id: 485812721,  name: "TweetDeck (3.16.1)"}
-      - {id: 409789998,  name: "Twitter (4.3.2)"}
-      - {id: 803453959,  name: "Slack (3.4.2)"}
-      - {id: 747648890,  name: "Telegram (5.2.2)"}
-      - {id: 920404675,  name: "Monodraw (1.4)"}
-      - {id: 1024640650, name: "CotEditor (3.7.5)"}
-      - {id: 408981434,  name: "iMovie (10.1.11)"}
-      - {id: 1035516352, name: "ScanSnap Cloud (1.2.10)"}
-      - {id: 409203825,  name: "Numbers (6.0)"}
-      - {id: 539883307,  name: "LINE (5.16.2)"}
-      - {id: 425955336,  name: "Skitch (2.8.2)"}
-      - {id: 409183694,  name: "Keynote (9.0.1)"}
-      - {id: 409907375,  name: "Remote Desktop (3.9)"}
-      - {id: 439654198,  name: "SimpleMind Lite (1.23.1)"}
-      - {id: 1327661892, name: "XMind (9.1.4)"}
-      - {id: 1289197285, name: "MindNode (6.0.2)"}
-      - {id: 405399194,  name: "Kindle (1.26.1)"}
+      - {id: 1024069033,	name: "Veertu (1.1.5)"}
+      - {id: 1024640650,	name: "CotEditor (3.9.6)"}
+      - {id: 1033074719,	name: "Bilingual News (1.18)"}
+      - {id: 1037126344,	name: "Apple Configurator 2 (2.13.1)"}
+      - {id: 1118136179,	name: "AutoMute (1.4)"}
+      - {id: 1176895641,	name: "Spark (2.8.3)"}
+      - {id: 1278508951,	name: "Trello (2.11.7)"}
+      - {id: 1289197285,	name: "MindNode (7.3.3)"}
+      - {id: 1295203466,	name: "Microsoft Remote Desktop (10.4.0)"}
+      - {id: 1327661892,	name: "XMind (10.2.1)"}
+      - {id: 1333542190,	name: "1Password 7 (7.6)"}
+      - {id: 1354318707,	name: "Core Tunnel (2.4.1)"}
+      - {id: 1358883623,	name: "Classroom (2.2)"}
+      - {id: 1402042596,	name: "AdBlock (1.26.0)"}
+      - {id: 1425667336,	name: "Transcriptase (1.3.2)"}
+      - {id: 1436953057,	name: "Ghostery Lite (1.1.0)"}
+      - {id: 1477385213,	name: "Save to Pocket (1.1)"}
+      - {id: 1491071483,	name: "Tot (1.1.1)"}
+      - {id: 403574981,	name: "Call of Duty 4 - Modern Warfare (1.7.2)"}
+      - {id: 405399194,	name: "Kindle (1.29.0)"}
+      - {id: 407963104,	name: "Pixelmator (3.9)"}
+      - {id: 408981434,	name: "iMovie (10.1.16)"}
+      - {id: 409183694,	name: "Keynote (10.2)"}
+      - {id: 409201541,	name: "Pages (10.2)"}
+      - {id: 409203825,	name: "Numbers (10.2)"}
+      - {id: 409789998,	name: "Twitter (4.3.2)"}
+      - {id: 409907375,	name: "Remote Desktop (3.9.3)"}
+      - {id: 412448059,	name: "ForkLift (2.6.6)"}
+      - {id: 418357707,	name: "CocoaPacketAnalyzer (1.51)"}
+      - {id: 421131143,	name: "MPlayerX (1.0.14)"}
+      - {id: 422304217,	name: "Day One Classic (1.10.6)"}
+      - {id: 425264550,	name: "Disk Speed Test (3.2)"}
+      - {id: 425424353,	name: "The Unarchiver (4.2.2)"}
+      - {id: 425955336,	name: "Skitch (2.9)"}
+      - {id: 427515976,	name: "3Hub (1.0.9)"}
+      - {id: 430255202,	name: "Mactracker (7.9.5)"}
+      - {id: 434433123,	name: "Apple Configurator (1.7.2)"}
+      - {id: 439654198,	name: "SimpleMind Lite (1.27.1)"}
+      - {id: 441258766,	name: "Magnet (2.4.8)"}
+      - {id: 455068834,	name: "Adobe Revel (2.0.1)"}
+      - {id: 457622435,	name: "Yoink (3.5.8)"}
+      - {id: 462054704,	name: "Microsoft Word (16.41)"}
+      - {id: 462058435,	name: "Microsoft Excel (16.41)"}
+      - {id: 462062816,	name: "Microsoft PowerPoint (16.41)"}
+      - {id: 485812721,	name: "TweetDeck (3.16.1)"}
+      - {id: 494803304,	name: "WiFi Explorer (2.6.2)"}
+      - {id: 497799835,	name: "Xcode (12.0.1)"}
+      - {id: 539883307,	name: "LINE (6.3.1)"}
+      - {id: 568494494,	name: "Pocket (1.8.5)"}
+      - {id: 581915465,	name: "Colors for Hue (1.2.7)"}
+      - {id: 585829637,	name: "Todoist (7.3.4)"}
+      - {id: 668841348,	name: "Authy Bluetooth (1.3)"}
+      - {id: 682658836,	name: "GarageBand (10.3.5)"}
+      - {id: 715768417,	name: "Microsoft Remote Desktop (8.0.30030)"}
+      - {id: 747648890,	name: "Telegram (7.0.1)"}
+      - {id: 803453959,	name: "Slack (4.9.0)"}
+      - {id: 848311469,	name: "Write (1.1.8)"}
+      - {id: 920404675,	name: "Monodraw (1.4)"}
+      - {id: 948415170,	name: "Pushbullet (4)"}
+      - {id: 966085870,	name: "TickTick (3.7.20)"}
+
   # pre_tasks:
     ## https://brew.sh/
     # - name: Install Homebrew
